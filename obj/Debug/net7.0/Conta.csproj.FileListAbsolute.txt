@@ -1,0 +1,15 @@
+C:\Users\Joe\Documents\C#\Conta\Conta\bin\Debug\net7.0\Conta.exe
+C:\Users\Joe\Documents\C#\Conta\Conta\bin\Debug\net7.0\Conta.deps.json
+C:\Users\Joe\Documents\C#\Conta\Conta\bin\Debug\net7.0\Conta.runtimeconfig.json
+C:\Users\Joe\Documents\C#\Conta\Conta\bin\Debug\net7.0\Conta.dll
+C:\Users\Joe\Documents\C#\Conta\Conta\bin\Debug\net7.0\Conta.pdb
+C:\Users\Joe\Documents\C#\Conta\Conta\obj\Debug\net7.0\Conta.csproj.AssemblyReference.cache
+C:\Users\Joe\Documents\C#\Conta\Conta\obj\Debug\net7.0\Conta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joe\Documents\C#\Conta\Conta\obj\Debug\net7.0\Conta.AssemblyInfoInputs.cache
+C:\Users\Joe\Documents\C#\Conta\Conta\obj\Debug\net7.0\Conta.AssemblyInfo.cs
+C:\Users\Joe\Documents\C#\Conta\Conta\obj\Debug\net7.0\Conta.csproj.CoreCompileInputs.cache
+C:\Users\Joe\Documents\C#\Conta\Conta\obj\Debug\net7.0\Conta.dll
+C:\Users\Joe\Documents\C#\Conta\Conta\obj\Debug\net7.0\refint\Conta.dll
+C:\Users\Joe\Documents\C#\Conta\Conta\obj\Debug\net7.0\Conta.pdb
+C:\Users\Joe\Documents\C#\Conta\Conta\obj\Debug\net7.0\Conta.genruntimeconfig.cache
+C:\Users\Joe\Documents\C#\Conta\Conta\obj\Debug\net7.0\ref\Conta.dll
