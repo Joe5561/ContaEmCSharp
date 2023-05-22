@@ -16,32 +16,37 @@
 
                 if (opStar == 1) {
                     Console.Write("Digite o número da conta: ");
-                    int numeroConta = int.Parse(Console.ReadLine());
+                    int numeroConta = int.Parse(Console.ReadLine());                    
                     Console.Write("Entre com o nome: ");
-                    string nome = Console.ReadLine();
+                    string nome = Console.ReadLine().ToUpper();
+                    Console.Write("Entre com o CPF: ");
+                    string cpf = (Console.ReadLine());
 
                     
 
-                    Console.Write("Saldo em conta: " + conta.getSaldo() + " Nome: " + nome); 
+                    Console.Write("Saldo em conta: " + conta.getSaldo() + " Nome: " + nome + " CPF: " + cpf); 
                     Console.WriteLine();                    
 
                     Console.Write("Entre com o valor do depósito: ");
-                    int valorDeposito = int.Parse(Console.ReadLine());
+                    double valorDeposito = double.Parse(Console.ReadLine());
                     conta.depositar(valorDeposito);
                     Console.WriteLine();
                     Console.Write("Saldo atualizado para: " + conta.getSaldo() + " Nome: " + nome);
                     Console.WriteLine();
 
                     Console.Write("Deseja efetuar um saque? Digite 1 para SIM ou 0 para NÃO: ");
-                    opcao = int.Parse((string)Console.ReadLine());
+                    opcao = int.Parse((Console.ReadLine()));
 
                     if (opcao == 1) {
                         Console.Write("Digite o valor a ser retirado: ");
                         double sacarValor = double.Parse(Console.ReadLine());
                         conta.sacar(sacarValor);
-                        Console.Write("Saldo atualizado para: " + conta.getSaldo() + " Nome: " + nome);
+                        Console.Write("Saldo atualizado para: " + conta.getSaldo() + " Nome: " + nome + " CPF: " + cpf);
+                        Console.WriteLine();
                     } else {
-                        Console.Write("Saldo de: " + conta.getSaldo());
+                        Console.WriteLine("Saldo de: " + conta.getSaldo());
+                        Console.Write("CPF: " + cpf);
+                        Console.WriteLine();
                     }
 
                 } else {
