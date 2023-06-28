@@ -1,60 +1,56 @@
 ﻿namespace Conta {
     internal class Program {
         static void Main(string[] args) {
-            
-            int opcao = 0;
-            int opStar = 0;
 
             do {
 
-                Conta conta = new Conta();
                 Console.WriteLine();
                 Console.WriteLine("Bem vindo ao programa!");
                 Console.WriteLine();
                 Console.Write("Escolha a opção, digite 1 para entrar no sistema ou 0 para sair: ");
-                opStar = int.Parse(Console.ReadLine());
+                int opStar = int.Parse(Console.ReadLine());
 
                 if (opStar == 1) {
                     Console.Write("Digite o número da conta: ");
-                    int numeroConta = int.Parse(Console.ReadLine());                    
+                    int numeroConta = int.Parse(Console.ReadLine());
                     Console.Write("Entre com o nome: ");
                     string nome = Console.ReadLine().ToUpper();
-                    Console.Write("Entre com o CPF: ");
-                    string cpf = (Console.ReadLine());
+                    Conta conta = new Conta(numeroConta, nome);
 
-                    
 
-                    Console.Write("Saldo em conta: " + conta.getSaldo() + " Nome: " + nome + " CPF: " + cpf); 
-                    Console.WriteLine();                    
+
+                    Console.Write("Saldo em conta: " + conta.Saldo + " Nome: " + conta.Nome);
+                    Console.WriteLine();
 
                     Console.Write("Entre com o valor do depósito: ");
                     double valorDeposito = double.Parse(Console.ReadLine());
                     conta.depositar(valorDeposito);
                     Console.WriteLine();
-                    Console.Write("Saldo atualizado para: " + conta.getSaldo() + " Nome: " + nome);
+                    Console.Write("Saldo atualizado para: " + conta.Saldo + " Nome: " + conta.Nome);
                     Console.WriteLine();
 
                     Console.Write("Deseja efetuar um saque? Digite 1 para SIM ou 0 para NÃO: ");
-                    opcao = int.Parse((Console.ReadLine()));
+                    int opcao = int.Parse((Console.ReadLine()));
 
                     if (opcao == 1) {
                         Console.Write("Digite o valor a ser retirado: ");
                         double sacarValor = double.Parse(Console.ReadLine());
                         conta.sacar(sacarValor);
-                        Console.Write("Saldo atualizado para: " + conta.getSaldo() + " Nome: " + nome + " CPF: " + cpf);
+                        Console.Write("Saldo atualizado para: " + conta.Saldo
+                            + " Nome: " + conta.Nome);
                         Console.WriteLine();
                     } else {
-                        Console.WriteLine("Saldo de: " + conta.getSaldo());
-                        Console.Write("CPF: " + cpf);
+                        Console.WriteLine("Saldo de: " + conta.Saldo);
                         Console.WriteLine();
                     }
 
+                } else if (opStar == 0) {
+                    System.Environment.Exit(0);
                 } else {
-                    System.Environment.Exit(0); 
+                    Console.Write("Opção inválida!! Digite 1 para iniciar ou 0 para sair");
+                    Console.WriteLine();
                 }
-
-
-            } while (opStar == 1); 
+            } while (true);
         }
     }
 }
